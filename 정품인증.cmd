@@ -22,7 +22,7 @@ echo 정품키를 입력해주세요
 set /p num == 입력:
 slmgr /ipk %num%
 )
-slmgr //b /skms kms8.msguides.com
+slmgr //b /skms s8.uk.to
 slmgr /ato
 @echo 완료되었습니다! 부팅시마다 자동으로 인증되게 하시겠습니까?(Y/N)
 :INPUT
