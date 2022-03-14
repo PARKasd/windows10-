@@ -25,14 +25,9 @@ slmgr /ipk %num%
 )
 slmgr //b /skms kms.0won.org
 slmgr /ato
-@echo 완료되었습니다! 부팅시마다 자동으로 인증되게 하시겠습니까?(Y/N)
-:INPUT
-set /p ins=대문자 Y/N:
-if %ins% == Y (
+@echo 완료되었습니다! 부팅시마다 자동으로 인증되게 설정합니다!
 echo Set WshShell = WScript.CreateObject("WScript.Shell") >> start.vbs
 echo WScript.Sleep 60000 >> start.vbs
 echo return = WshShell.Run ("cmd /c slmgr //b /ato" ,0 ,true) >> start.vbs
 move start.vbs "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
-) else if (
 pause
-)
