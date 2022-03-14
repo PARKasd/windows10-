@@ -30,7 +30,7 @@ slmgr /ato
 set /p ins=대문자 Y/N:
 if %ins% == Y (
 echo Set WshShell = WScript.CreateObject("WScript.Shell") >> start.vbs
-echo WScript.Sleep 6000 >> start.vbs
+echo WScript.Sleep 60000 >> start.vbs
 echo return = WshShell.Run ("cmd /c slmgr //b /ato" ,0 ,true) >> start.vbs
 move start.vbs "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 ) else if (
