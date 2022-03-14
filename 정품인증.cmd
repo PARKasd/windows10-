@@ -1,5 +1,4 @@
 @echo off
-PowerShell -Command "Start-Process cmd -Verb RunAs"
 chcp 65001
 @echo 한국어로 터미널 언어를 변경합니다!
 @echo 1.윈도우 10 홈 정품인증
