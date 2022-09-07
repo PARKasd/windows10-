@@ -22,7 +22,7 @@ echo 정품키를 입력해주세요
 set /p num == 입력:
 slmgr /ipk %num%
 )
-slmgr //b /skms kms.0won.org
+slmgr //b /skms kms.ddns.net
 slmgr /ato
 @echo 완료되었습니다! 부팅시마다 자동으로 인증되게 설정합니다!
 echo Set WshShell = WScript.CreateObject("WScript.Shell") >> start.vbs
